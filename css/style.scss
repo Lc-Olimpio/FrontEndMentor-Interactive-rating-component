@@ -1,0 +1,112 @@
+$primary-color :hsl(25, 97%, 53%);
+$secondary-color:hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+
+body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+  font-size: 15px;
+  min-height: 100vh;
+
+  
+
+  .main{
+    background-color: hsl(213, 19%, 18%);
+    color: $secondary-color;
+    max-width: 30em;
+    margin: 2em;
+    padding: 1.5em 3em;
+    border-radius: 2em;
+
+    h1 {
+      font-weight: 400;
+    }
+
+    p {
+      margin: 1em 0;
+      color: hsl(217, 12%, 63%) ;
+    }
+
+    .starImg {
+      background: hsl(213deg 18% 24%);
+      margin: 1em 0;
+      padding: 0.9em;
+      border-radius: 50%;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 2em 0;
+
+      .selected {
+        background: hsl(217, 12%, 63%);
+        color: $secondary-color;
+      }
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(213deg 18% 24%);
+        color: hsl(217, 12%, 63%);
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        margin: 0 0.1em;
+        padding: 1.5em;
+        border: none;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $secondary-color;
+          cursor: pointer;
+        }
+      } 
+    }
+
+    .submit-button {
+      width: 100%;
+      display: block;
+      margin: 0.8em auto;
+      padding: 0.8em;
+      color: $secondary-color;
+      background: $primary-color;
+      border-radius: 2em;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+
+      &:hover {
+        background: $secondary-color;
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 11px; 
+    position: absolute;
+    bottom: 1em;
+    color: $secondary-color;
+
+    a { 
+      color: hsl(228, 59%, 72%); 
+    }
+  }
+     
+  
+}
