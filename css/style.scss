@@ -1,5 +1,6 @@
 $primary-color :hsl(25, 97%, 53%);
 $secondary-color:hsl(0, 0%, 100%);
+$details-color:hsl(213 18% 24%);
 
 * {
   margin: 0;
@@ -18,30 +19,49 @@ body{
   font-size: 15px;
   min-height: 100vh;
 
-  
-
   .main{
     background-color: hsl(213, 19%, 18%);
     color: $secondary-color;
-    max-width: 30em;
+    max-width: 27em;
     margin: 2em;
     padding: 1.5em 3em;
     border-radius: 2em;
-
-    h1 {
-      font-weight: 400;
+    
+    h2 {
+      text-align: center;
     }
 
     p {
-      margin: 1em 0;
+      margin: 2em 0;
       color: hsl(217, 12%, 63%) ;
+
+      &.thankyoutext {
+        text-align: center;
+        
+      }
     }
 
     .starImg {
-      background: hsl(213deg 18% 24%);
+      background: $details-color;
       margin: 1em 0;
       padding: 0.9em;
       border-radius: 50%;
+    }
+
+    .thanksimg {
+      display: block;
+      margin: 1em auto;
+    }
+    
+    span {
+      color: $primary-color;
+      background: $details-color;
+      padding: 0.2em 0.4em;
+      display: block;
+      width: fit-content;
+      margin: 2em auto;
+      border-radius: 1em;
+      text-align: center;
     }
 
     ul {
@@ -59,7 +79,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: hsl(213deg 18% 24%);
+        background: $details-color;
         color: hsl(217, 12%, 63%);
         border-radius: 50%;
         width: 3em;
