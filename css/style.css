@@ -53,17 +53,13 @@ body {
   border-radius: 1em;
   text-align: center;
 }
-.main ul {
+.main .scoreopt {
   list-style: none;
   display: flex;
   justify-content: space-around;
   margin: 2em 0;
 }
-.main .selected {
-  background: hsl(217deg, 12%, 63%);
-  color: hsl(0deg, 0%, 100%);
-}
-.main li {
+.main .score {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,10 +72,14 @@ body {
   padding: 1.5em;
   border: none;
 }
-.main li:hover {
+.main .score:hover {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
+}
+.main .selected {
+  background: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
 }
 .main .submit-button {
   width: 100%;
